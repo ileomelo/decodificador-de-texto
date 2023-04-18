@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 900px)">
+    <!-- <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)"> -->
+</head>
+
+<body>
+    <div class="frame6">
+        <div class="logo">
+            <i class="vector"><img src="img/vector.svg">
+            </i>
+        </div>
+    </div>
+
+
+
+    <div class="frame1">
+        <div class="exclamation">
+            <div class="group-exclamation">
+                <img src="img/vector2.svg">
+            </div>
+        </div>
+        <p>Apenas letras minúsculas e sem acento. Máximo de 300 caracteres!!</p>
+    </div>
+
+    <div class="frame3">
+        <button class="btn1" id="encrypt-button">
+            <p>Criptografar</p>
+        </button>
+        <button class="btn2" id="decrypt-button">
+            <p>Descriptografar</p>
+        </button>
+    </div>
+
+    <div class="rectangle1">
+        <div class="output">
+            <textarea id="textoutput" type="text" readonly></textarea>
+        </div>
+    </div>
+    <div class="svg-msg">
+        <img class="svg1" src="img/svg1.svg">
+
+        <div class="frame5">
+            <p class="msg1">Nenhuma mensagem encontrada</p>
+            <p class="msg2">Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+    </div>
+    <button id="copy-button">
+        <p>Copiar</p>
+    </button>
+
+    <textarea type="text" placeholder="Digite seu texto..." class="input-text" maxlength="300"
+        oninput="autoResizeTextArea(this)"></textarea>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
